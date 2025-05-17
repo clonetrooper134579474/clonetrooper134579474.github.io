@@ -387,7 +387,7 @@ Loaded=0;
 
 Reset=function()
 {
-	ajax('http://orteil.dashnet.org/experiments/cookie/backend.php?q=reset',ResetResponse);
+	ajax('https://orteil.dashnet.org/experiments/cookie/backend.php?q=reset',ResetResponse);
 }
 ResetResponse=function()
 {
@@ -406,7 +406,7 @@ Save=function()
 	Labs+'|'+Buyables['Alchemy lab'].price+'|'+
 	Portals+'|'+Buyables['Portal'].price;
 
-	ajax('http://orteil.dashnet.org/experiments/cookie/backend.php?q=save%7C'+str,SaveResponse);
+	ajax('https://orteil.dashnet.org/experiments/cookie/backend.php?q=save%7C'+str,SaveResponse);
 }
 
 SaveResponse=function(response)
@@ -422,7 +422,7 @@ SaveResponse=function(response)
 
 Load=function()
 {
-	ajax('http://orteil.dashnet.org/experiments/cookie/backend.php?q=load',LoadResponse);
+	ajax('https://orteil.dashnet.org/experiments/cookie/backend.php?q=load',LoadResponse);
 }
 
 LoadResponse=function(response)
