@@ -1,5 +1,5 @@
 <?php
 header("Content-Type: video/flv");
-
-echo file_get_contents('video.flv');
+header('Content-Length: ' . filesize('video.flv'));
+readfile('video.flv');
 ?>
